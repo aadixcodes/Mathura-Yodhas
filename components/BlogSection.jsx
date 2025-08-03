@@ -50,16 +50,16 @@ export default function BlogSection() {
   return (
     <section className="py-12 bg-[#fdfcf9]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-20">
-        <h2 className="text-3xl font-bold mb-10 text-center font-[popins]">Latest Blogs</h2>
+        <h2 className="lg:text-5xl font-bold mb-10 text-center font-[heading-1]">Latest Blogs</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {blogPosts.map((post) => (
             <div key={post.id} className="bg-white shadow-lg rounded-lg overflow-hidden border border-gray-200">
               <img
                 src={post.image}
                 alt={post.title}
-                className="w-full h-60 object-cover"
+                className="w-full h-55 object-cover"
               />
-              <div className="bg-[#66071c] text-white p-6 pr-10">
+              <div className="bg-[#66071c] text-white p-3 pr-10">
                 <p className="text-sm mb-2 flex items-center">
                   <span role="img" aria-label="calendar" className="mr-2">📅</span>
                   {post.date}

@@ -38,10 +38,10 @@ const Schedule = () => {
       <div className="absolute inset-0 bg-[#680000]/90 z-0"></div>
       
       <div className="max-w-5xl mx-auto relative z-10">
-        <div className="flex justify-between items-center mb-1">
+        <div className="flex justify-between items-center mb-10">
           <div>
-            <h2 className="lg:text-4xl font-bold text-yellow-400 font-[popins]">Match Schedule</h2>
-            <p className="text-lg text-gray-100 lg:mt-2 font-[popins]">Next Clash on the Court</p>
+            <h2 className="lg:text-4xl font-bold text-yellow-400 font-[heading-1]">Match Schedule</h2>
+            <p className="text-lg text-gray-100 lg:mt-0 font-[popins]">Next Clash on the Court</p>
           </div>
           <Link
             href="/fixtures"
@@ -75,7 +75,7 @@ const Schedule = () => {
                 <div className="flex-1 flex justify-center">
                   <Image src={match.team1Logo} alt="Team 1 Logo" width={130} height={130} />
                 </div>
-                <div className="w-[80px] text-center font-bold text-2xl text-yellow-400">VS</div>
+                <div className="w-[80px] text-center font-bold text-2xl text-black">VS</div>
                 <div className="flex-1 flex justify-center">
                   <Image src={match.team2Logo} alt="Team 2 Logo" width={140} height={140} />
                 </div>
@@ -94,3 +94,4 @@ const Schedule = () => {
 };
 
 export default Schedule;
+

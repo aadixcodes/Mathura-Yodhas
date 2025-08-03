@@ -16,14 +16,13 @@ const Partners = () => {
   return (
     <section className="py-8 md:py-12 mt-10">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-2">
+        <div className="text-center mb-1">
           <h2 className="text-4xl sm:text-6xl font-[heading-1] opacity-95 text-[#1c0f0d]">
             Our Partners
           </h2>
-          <div className="w-[25%] h-1 bg-[#fab604] mx-auto mt-3"></div>
         </div>
         <div className="text-center  mb-6 md:mb-8">
-          <p className="text-xl text-[#1c0f0d] font-[para-1]"> <i> Official Broadcasting Partners </i></p>
+          <p className="text-xl text-[#1c0f0d] font-[popins]"> <i> Official Broadcasting Partners </i></p>
         </div>
 
         {/* Partner logos - now with consistent spacing */}

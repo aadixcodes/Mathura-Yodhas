@@ -2,7 +2,7 @@ export default function Contact() {
     return (
       <section
         className="w-full relative bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: "url('/assets/backgroun.png')" }} // 🔁 Replace with actual image path
+        style={{ backgroundImage: "url('/assets/background.png')" }} // 🔁 Replace with actual image path
       >
         {/* White light overlay */}
         <div className="absolute inset-0 bg-white/10 bg-opacity-40 z-0" />
@@ -80,7 +80,7 @@ export default function Contact() {
             <div className="mt-12 w-full max-w-5xl">
                 <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d112178.51076159457!2d77.31942423472935!3d28.522327774263665!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce5a43173357b%3A0x37ffce30c87cc03f!2sNoida%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1753900962452!5m2!1sen!2sin"
-                className="w-full h-[400px] rounded-lg shadow-md"
+                className="w-full h-[400px] rounded-lg shadow-md border-2 border-orange-800"
                 style={{ border: 0 }}
                 allowFullScreen=""
                 loading="lazy"

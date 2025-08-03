@@ -32,7 +32,15 @@ const Navbar = () => {
 
             <Link href={"/team"} className="cursor-pointer hover:text-[#4f0516]">Team</Link>
             <Link href={"/blogs"} className="cursor-pointer hover:text-[#4f0516]">Blogs</Link>
-            <Link href={"/contact"} className="cursor-pointer hover:text-[#4f0516]">Contact us</Link>
+
+            {/* More Dropdown */}
+            <div className="relative group">
+              <button className="cursor-pointer hover:text-[#4f0516]">More ▾</button>
+              <div className="absolute top-full mt-2 bg-[#fcd700] text-black rounded shadow-md opacity-0 group-hover:opacity-100 pointer-events-none group-hover:pointer-events-auto transition duration-200 z-50">
+                <Link href="/gallery" className="block px-4 py-2 hover:bg-[#ffe066] whitespace-nowrap">Gallery</Link>
+                <Link href="/contact" className="block px-4 py-2 hover:bg-[#ffe066] whitespace-nowrap">Contact Us</Link>
+              </div>
+            </div>
           </div>
 
           {/* Mobile Menu Toggle - Visible on Mobile */}

@@ -24,7 +24,7 @@ const Hero = () => {
           {/* Slide 1 */}
           <SwiperSlide className="relative w-full h-full">
             <Image
-              src={"/assets/Banner.jpg"}
+              src={"/assets/Banner1.png"}
               alt="Banner 1"
               fill
               className="object-contain bg-bottom"

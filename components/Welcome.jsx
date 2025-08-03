@@ -7,11 +7,11 @@ const Welcome = () => {
     <section className="py-12 sm:py-16 md:py-20">
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
-        <div className="text-center mb-10 sm:mb-16">
-          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-5xl text-[#1c0f0d] font-[heading-1] mb-4 opacity-95 leading-tight">
+        <div className="text-center mb-10 sm:mb-12">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-5xl text-[#1c0f0d] font-[heading-1] mb-2 opacity-95 leading-tight">
             The soul of Mathura. The Spirit of Yodhas.
           </h1>
-          <p className="mt-2 text-base sm:text-lg md:text-xl text-[#1c0f0d] font-[popins] font-bold">
+          <p className="text-base sm:text-lg md:text-xl text-[#1c0f0d] font-[popins] font-bold">
             "We don't retreat. We rise. We strike. We rewrite destiny."
           </p>
         </div>

@@ -5,7 +5,7 @@ export default function OurPurpose() {
     <section className="py-16 px-4 sm:px-6 lg:px-20 bg-white">
       {/* Title */}
       <h2 className="text-center text-xl sm:text-2xl font-semibold text-[#520f1b] mb-10">
-        <span className="border-2 border-[#520f1b] px-4 py-1 font-[popins] rounded-full italic">
+        <span className="border-2 border-[#520f1b] px-4 py-1 font-[popins] rounded-full">
           OUR PURPOSE
         </span>
       </h2>
@@ -22,7 +22,7 @@ export default function OurPurpose() {
         </div>
 
         {/* Vision Box with Background Image and Overlay */}
-        <div className="relative h-[300px] md:h-auto rounded shadow-md overflow-hidden">
+        <div className="relative h-[300px] border-4 border-[#7a3d3d] md:h-auto rounded shadow-md overflow-hidden">
           <div
             className="absolute inset-0 bg-cover bg-center"
             style={{ backgroundImage: "url('/assets/bg-image.png')" }}

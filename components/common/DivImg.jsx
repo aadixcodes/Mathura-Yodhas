@@ -15,7 +15,7 @@ const DivImg = ({ text }) => {
       {/* Dark overlay to ensure text readability */}
       <div className="absolute inset-0 bg-white/20"></div>
       
-      <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-[#fab505] font-[heading-1] mt-12 relative z-10">
+      <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-white font-[heading-1] mt-12 relative z-10">
         {text || 'About Us'}
       </h2>
     </div>

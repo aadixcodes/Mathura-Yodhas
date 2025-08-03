@@ -1,39 +1,50 @@
-// components/Leadership.jsx
-
 import Image from "next/image";
 
 export default function Leadership() {
   const coaches = [
     {
       name: "Head Coach",
-      image: "/assets/Profile.webp", // Replace with your actual image path
+      image: "/assets/Profile.webp",
     },
     {
       name: "Asst. Coach",
-      image: "/assets/Profile.webp", // Replace with your actual image path
+      image: "/assets/Profile.webp",
     },
   ];
 
   return (
-    <section className="py-16 bg-white px-4 sm:px-6 lg:px-20">
-      <div className="max-w-5xl mx-auto text-center">
-        <h2 className="text-4xl font-bold text-gray-900 mb-4 font-[popins]">Our Leadership</h2>
-        <p className="text-gray-700 max-w-xl mx-auto mb-12 font-[popins]">
-          Adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco.
+    <section className="py-12 px-4 sm:px-6 lg:px-20 bg-white">
+      <div className="max-w-6xl mx-auto text-center">
+        {/* Heading */}
+        <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 font-[heading-1]">
+          Our Leadership
+        </h2>
+
+        {/* Subtext */}
+        <p className="text-sm sm:text-base md:text-lg text-black max-w-2xl mx-auto mb-10 font-[popins]">
+          Adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
         </p>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-0 justify-items-center">
+        {/* Grid */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 justify-items-center">
           {coaches.map((coach, index) => (
-            <div key={index} className="text-center shadow-lg rounded-lg overflow-hidden max-w-sm w-full">
-            <Image
-              src="/assets/iconplayer.jpg"
-              alt="Vinit Kumar"
-              width={300}
-              height={300}
-              className="rounded shadow-md object-contain mx-auto"/>
-              <div className="bg-[#66071c] py-4">
-                <p className="text-white font-semibold text-lg">{coach.name}</p>
+            <div
+              key={index}
+              className="w-[250px] sm:w-[280px] md:w-[300px] text-center shadow-md rounded-lg overflow-hidden transition-transform duration-300 hover:scale-[1.02]"
+            >
+              <div className="bg-white p-2">
+                <Image
+                  src={coach.image}
+                  alt={coach.name}
+                  width={300}
+                  height={300}
+                  className="object-contain mx-auto w-full h-[240px] sm:h-[260px]"
+                />
+              </div>
+              <div className="bg-[#66071c] py-3">
+                <p className="text-white font-semibold text-base sm:text-lg">
+                  {coach.name}
+                </p>
               </div>
             </div>
           ))}

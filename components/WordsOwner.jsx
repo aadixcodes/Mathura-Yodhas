@@ -19,11 +19,11 @@ export default function WordsOwner() {
 
         {/* Right - Text */}
         <div>
-          <h2 className="text-4xl sm:text-5xl font-extrabold font-[popins] text-yellow-400 mb-6">
+          <h2 className="text-4xl sm:text-5xl font-extrabold font-[heading-1] text-yellow-400 mb-8">
             Words from Our Owners
           </h2>
 
-          <p className="text-sm text-white italic font-[popins] leading-relaxed mb-6">
+          <p className="text-sm text-white italic font-[popins] leading-relaxed mb-4">
             Mathura Yodhas is more than a team — it’s a tribute. A tribute to our roots, our warriors,
             and our youth who dream of rising. When we built this team, we envisioned creating something
             sacred yet fierce, modern yet traditional. Our players represent the strength of our soil and
@@ -37,7 +37,7 @@ export default function WordsOwner() {
             When Yodhas enter the court — they enter to conquer.”
           </p>
 
-          <p className="text-xl italic font-medium text-white font-[popins]">
+          <p className="text-xl font-medium text-white font-[popins]">
             Puneet Khanna & Navdeep Tiwari
             <br />
             <span className="text-base">Mathura Yodhas</span>
