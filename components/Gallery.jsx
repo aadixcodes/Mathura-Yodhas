@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 const images = [
   "/assets/Banner.jpg",
@@ -35,6 +36,14 @@ const Gallery = () => {
             </div>
           ))}
         </div>
+
+        <div className="w-full flex items-center justify-center mt-10">
+          <Link href={'/gallery'}>
+            <button className="py-3 px-7 bg-yellow-500 rounded-full">View More</button>
+          </Link>
+        </div>
+
+
       </div>
     </section>
   );

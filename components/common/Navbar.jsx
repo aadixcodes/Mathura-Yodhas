@@ -21,18 +21,18 @@ const Navbar = () => {
 
           {/* Desktop Links - Hidden on Mobile */}
           <div className="hidden sm:flex justify-center items-center lg:gap-20 font-[popins] text-xl">
-            <Link href={"/"} className="cursor-pointer hover:text-[#fab505]">Home</Link>
-            <Link href={"/about"} className="cursor-pointer hover:text-[#fab505]">About</Link>
-            <Link href={"/fixtures"} className="cursor-pointer hover:text-[#fab505]">Fixtures</Link>
+            <Link href={"/"} className="cursor-pointer hover:text-[#4f0516]">Home</Link>
+            <Link href={"/about"} className="cursor-pointer hover:text-[#4f0516]">About</Link>
+            <Link href={"/fixtures"} className="cursor-pointer hover:text-[#4f0516]">Fixtures</Link>
 
             {/* Logo */}
             <div className="h-20 w-20 relative shrink-0">
               <Image src={'/assets/mathura.png'} alt="Ayodhya Super Kings" fill className="object-contain" priority />
             </div>
 
-            <Link href={"/team"} className="cursor-pointer hover:text-[#fab505]">Team</Link>
-            <Link href={"/blog"} className="cursor-pointer hover:text-[#fab505]">Blogs</Link>
-            <Link href={"/contact"} className="cursor-pointer hover:text-[#fab505]">Contact us</Link>
+            <Link href={"/team"} className="cursor-pointer hover:text-[#4f0516]">Team</Link>
+            <Link href={"/blogs"} className="cursor-pointer hover:text-[#4f0516]">Blogs</Link>
+            <Link href={"/contact"} className="cursor-pointer hover:text-[#4f0516]">Contact us</Link>
           </div>
 
           {/* Mobile Menu Toggle - Visible on Mobile */}
@@ -63,7 +63,7 @@ const Navbar = () => {
               <Link href={"/fixtures"} className="cursor-pointer hover:text-[#fab505]" onClick={() => setIsOpen(false)}>Fixtures</Link>
               <Link href={"/team"} className="cursor-pointer hover:text-[#fab505]" onClick={() => setIsOpen(false)}>Team</Link>
               <Link href={"/gallery"} className="cursor-pointer hover:text-[#fab505]" onClick={() => setIsOpen(false)}>Gallery</Link>
-              <Link href={"/blog"} className="cursor-pointer hover:text-[#fab505]" onClick={() => setIsOpen(false)}>Blogs</Link>
+              <Link href={"/blogs"} className="cursor-pointer hover:text-[#fab505]" onClick={() => setIsOpen(false)}>Blogs</Link>
               <Link href={"/contact"} className="cursor-pointer hover:text-[#fab505]" onClick={() => setIsOpen(false)}>Contact us</Link>
             </div>
             <button

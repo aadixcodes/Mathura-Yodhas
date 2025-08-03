@@ -3,11 +3,12 @@
 
 export default function GallerySection() {
   const images = [
-    "/images/gallery/image1.jpg",
-    "/images/gallery/image2.jpg",
-    "/images/gallery/image3.jpg",
-    "/images/gallery/image4.jpg",
-    "/images/gallery/image5.jpg",
+    "/assets/gallery/1.jpg",
+    "/assets/gallery/2.jpg",
+    "/assets/gallery/3.jpg",
+    "/assets/gallery/4.jpg",
+    "/assets/gallery/5.jpg",
+    "/assets/gallery/6.jpg",
   ];
 
   return (

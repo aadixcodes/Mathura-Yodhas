@@ -5,7 +5,7 @@ import React from 'react'
 const page = () => {
   return (
     <>
-    <DivImg/>
+    <DivImg text={"Fixtures"}/>
 
     <UpcomingMatches/>
     </>
