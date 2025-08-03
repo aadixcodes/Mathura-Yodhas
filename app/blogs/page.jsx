@@ -6,7 +6,7 @@ const page = () => {
   return (
     <>
 
-    <DivImg text={'Our Blogs'}/>
+    <DivImg text={'Blogs'}/>
 
     <BlogSection/>
     </>
