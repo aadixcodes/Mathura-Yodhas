@@ -16,7 +16,7 @@ export default function Leadership() {
     <section className="py-12 px-4 sm:px-6 lg:px-20 bg-white">
       <div className="max-w-6xl mx-auto text-center">
         {/* Heading */}
-        <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 font-[heading-1]">
+        <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-4 font-[heading-1]">
           Our Leadership
         </h2>
 
