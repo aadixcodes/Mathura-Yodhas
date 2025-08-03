@@ -10,21 +10,25 @@ const Icons = [
     {
       id: 1,
       icon: <FaFacebookF />,
+      url: 'https://www.facebook.com/profile.php?id=61578258997892'
     },
 
     {
       id: 2,
       icon: <FaInstagram />,
+      url: 'https://www.instagram.com/mathurayodhas/'
     },
 
     {
       id: 3,
       icon: <FaTwitter />,
+      url: 'https://x.com/MathuraYodhas?t=JqL2vap9U8ccwBVACPaUzA&s=08',
     },
 
     {
       id: 4,
       icon: <FaYoutube />,
+      url: 'https://www.youtube.com/channel/UC6caSs7bKrCkAueXAjxpmBA',
     }
   ]
 
@@ -42,10 +46,16 @@ const Icons = [
           Lorem ipsum dolor sit amet, consectetur elit. Vestibulum nec odio suscipit nascetur cursus, con sectetur elit.
         </p>
         <div className="flex gap-4 mt-4">
-          {Icons.map((idx, i) => (
-            <div key={i} className="bg-yellow-500 p-2 rounded-2xl">
-              <h2 className="text-black hover:text-white">{idx.icon}</h2>
-            </div>
+          {Icons.map((item) => (
+            <a
+              key={item.id}
+              href={item.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-yellow-500 p-2 rounded-2xl hover:bg-yellow-600 transition"
+            >
+              <h2 className="text-black hover:text-white">{item.icon}</h2>
+            </a>
           ))}
         </div>
       </div>
@@ -80,14 +90,14 @@ const Icons = [
               <IoCallOutline className="text-lg font-extralight" />
               <strong className="text-lg font-extralight">Phone:</strong>
             </div>
-            +91-9123456789
+            +91 8620000002
           </li>
           <li className="text-start">
             <div className="flex gap-3 items-center justify-start">
               <MdOutlineEmail className="text-xl font-extralight" />
               <strong className="text-lg font-extralight">Email:</strong>
             </div>
-            <a href="mailto:noidathunders@gmail.com" className="hover:text-yellow-500">noidathunders@gmail.com</a>
+            <a href="mailto:info@mathurayodhas.com" className="hover:text-yellow-500">info@mathurayodhas.com</a>
           </li>
         </ul>
       </div>
@@ -102,10 +112,16 @@ const Icons = [
           Lorem ipsum dolor sit amet, consectetur elit. Vestibulum nec odio suscipit nascetur cursus, con sectetur elit.
         </p>
         <div className="flex gap-4 mt-4 justify-center">
-          {Icons.map((idx, i) => (
-            <div key={i} className="bg-amber-500 p-2 rounded-2xl">
-              <h2 className="text-black hover:text-white">{idx.icon}</h2>
-            </div>
+          {Icons.map((item) => (
+            <a
+              key={item.id}
+              href={item.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-amber-500 p-2 rounded-2xl hover:bg-amber-600 transition"
+            >
+              <h2 className="text-black hover:text-white">{item.icon}</h2>
+            </a>
           ))}
         </div>
       </div>
@@ -148,12 +164,12 @@ const Icons = [
     </div>
   </div>
 
-  {/* Bottom Bar */}
-  <div className="font-[popins] text-center bg-[#e0b404] text-black py-4 text-sm mt-4 flex flex-col md:flex-row items-center justify-center lg:gap-28 md:px-32">
-    <p>© Copyright 2025 Ayodya Super Kings. All Rights Reserved.</p>
-    <p>Design & Developed by Varnix Media Pvt. Ltd.</p>
-  </div>
-</footer>
+    {/* Bottom Bar */}
+    <div className="font-[popins] text-center bg-[#e0b404] text-black py-4 text-sm mt-4 flex flex-col md:flex-row items-center justify-center lg:gap-28 md:px-32">
+      <p>© Copyright 2025 Ayodya Super Kings. All Rights Reserved.</p>
+      <p>Design & Developed by Varnix Media Pvt. Ltd.</p>
+    </div>
+  </footer>
 
 
   );

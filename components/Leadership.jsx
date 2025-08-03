@@ -8,7 +8,7 @@ export default function Leadership() {
     },
     {
       name: "Asst. Coach",
-      image: "/assets/Profile.webp",
+      image: "/assets/Rahul-Beniwal.jpg",
     },
   ];
 
