@@ -96,11 +96,6 @@ export default function TeamSection() {
   ];
 
   const management = [
-    // {
-    //   name: "Manager Name",
-    //   number: "01",
-    //   image: "/assets/Team/NAAVDEEP-TIWARI_web.jpg",
-    // },
     {
       name: "Manager Name",
       number: "01",
