@@ -12,7 +12,7 @@ const Gallery = () => {
     <section className="bg-[#680000] py-12 px-4">
       <div className="max-w-6xl mx-auto text-center">
         {/* Section Heading */}
-        <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-[heading-1] text-yellow-400 font-bold mb-2">
+        <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-[heading-1] text-yellow-400 mb-2">
           Our Gallery
         </h2>
         <p className="text-sm sm:text-base md:text-lg text-white italic font-[popins] mb-8">

@@ -7,6 +7,7 @@ const Partners = () => {
       name: "Sponsor 1",
       logo: "/assets/partner1.jpg",
     },
+    
     {
       name: "Sponsor 2",
       logo: "/assets/partner2.png",

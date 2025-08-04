@@ -19,7 +19,7 @@ export default function WordsOwner() {
 
         {/* Right - Text */}
         <div>
-          <h2 className="text-4xl sm:text-5xl font-extrabold font-[heading-1] text-yellow-400 mb-8">
+          <h2 className="text-4xl sm:text-5xl font-[heading-1] text-yellow-400 mb-8">
             Words from Our Owners
           </h2>
 

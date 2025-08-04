@@ -44,7 +44,7 @@ export default function UpcomingMatches() {
   return (
     <section className="py-12 px-4 sm:px-6 bg-white">
       <div className="max-w-5xl mx-auto text-center mb-10">
-        <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold font-[heading-1] text-[#5a071a]">
+        <h2 className="text-3xl sm:text-4xl md:text-5xl font-[heading-1] text-[#5a071a]">
           Upcoming Matches
         </h2>
       </div>
@@ -56,9 +56,10 @@ export default function UpcomingMatches() {
             className="bg-[#5a071a] rounded-tr-[40px] rounded-bl-[40px] w-full max-w-4xl mx-auto overflow-hidden shadow-md relative text-white px-4 py-6 sm:px-6"
           >
             {/* Match Time */}
-            <div className="absolute top-4 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-[#fbc02d] px-3 sm:px-4 py-1 rounded-full text-black font-bold text-xs sm:text-sm z-20">
-              {match.time}
+            <div className="absolute top-3 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-[#fbc02d] px-3 sm:px-4 py-1 rounded-bl-xl rounded-br-xl text-black font-bold text-xs sm:text-sm z-20">
+                {match.time}
             </div>
+
 
             <div className="flex flex-col md:flex-row items-center justify-between gap-6">
               {/* Home Team */}

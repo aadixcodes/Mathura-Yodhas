@@ -50,7 +50,7 @@ export default function BlogSection() {
   return (
     <section className="py-12 bg-[#fdfcf9]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-20">
-        <h2 className="lg:text-5xl font-bold mb-10 text-center font-[heading-1]">Latest Blogs</h2>
+        {/* <h2 className="lg:text-5xl mb-10 text-center font-[heading-1]">Latest Blogs</h2> */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {blogPosts.map((post) => (
             <div key={post.id} className="bg-white shadow-lg rounded-lg overflow-hidden border border-gray-200">
@@ -60,10 +60,10 @@ export default function BlogSection() {
                 className="w-full h-55 object-cover"
               />
               <div className="bg-[#66071c] text-white p-3 pr-10">
-                <p className="text-sm mb-2 flex items-center">
+                {/* <p className="text-sm mb-2 flex items-center">
                   <span role="img" aria-label="calendar" className="mr-2">📅</span>
                   {post.date}
-                </p>
+                </p> */}
                 <h3 className="text-lg font-semibold font-[popins]">{post.title}</h3>
                 <p className="text-sm mt-2 font-extralight">{post.excerpt}</p>
                 <a

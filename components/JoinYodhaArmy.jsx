@@ -4,7 +4,7 @@ import { FaXTwitter } from "react-icons/fa6";
 const JoinYodhaArmy = () => {
   return (
     <section
-      className="relative my-6 mx-4 sm:mx-8 md:mx-14 py-12 px-4 overflow-hidden"
+      className="relative my-6 mx-4 mb-20 sm:mx-8 md:mx-14 py-12 px-4 overflow-hidden"
       style={{
         backgroundImage: "url('/assets/joinArmy.png')",
         backgroundSize: "cover",
@@ -14,7 +14,7 @@ const JoinYodhaArmy = () => {
       {/* Content Wrapper */}
       <div className="max-w-4xl mx-auto text-center relative z-10">
         {/* Heading */}
-        <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-black mb-3 font-[heading-1]">
+        <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-black mb-3 font-[heading-1]">
           Join the Yodha Army
         </h2>
 

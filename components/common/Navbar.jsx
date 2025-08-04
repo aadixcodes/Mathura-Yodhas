@@ -1,12 +1,28 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { HiOutlineMenuAlt3, HiOutlineX } from "react-icons/hi";
 import Image from "next/image";
 import Link from "next/link";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [isMoreOpen, setIsMoreOpen] = useState(false);
+  const moreDropdownRef = useRef(null);
+
+  // Close dropdown when clicking outside
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (moreDropdownRef.current && !moreDropdownRef.current.contains(event.target)) {
+        setIsMoreOpen(false);
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
 
   return (
     <>
@@ -15,67 +31,196 @@ const Navbar = () => {
         {/* Add top content here if needed */}
       </div>
 
-      <nav className="w-full font-[Para-1]">
+      <nav className="w-full font-[Para-1] sticky top-0 z-50">
         {/* Bottom Section */}
-        <div className="text-black lg:px-36 px-6 bg-[#fcd700] md:bg-[#fcd700] z-50 relative">
-
-          {/* Desktop Links - Hidden on Mobile */}
-          <div className="hidden sm:flex justify-center items-center lg:gap-20 font-[popins] text-xl">
-            <Link href={"/"} className="cursor-pointer hover:text-[#4f0516]">Home</Link>
-            <Link href={"/about"} className="cursor-pointer hover:text-[#4f0516]">About</Link>
-            <Link href={"/fixtures"} className="cursor-pointer hover:text-[#4f0516]">Fixtures</Link>
-
-            {/* Logo */}
-            <div className="h-20 w-20 relative shrink-0">
-              <Image src={'/assets/mathura.png'} alt="Ayodhya Super Kings" fill className="object-contain" priority />
+        <div className="text-black lg:px-36 px-6 bg-[#fcd700] md:bg-[#fcd700] h-20 flex items-center relative">
+          {/* Desktop Layout */}
+          <div className="hidden sm:flex items-center justify-between w-full">
+            {/* Left Links */}
+            <div className="flex gap-6 lg:gap-12 font-[popins] text-lg lg:text-xl">
+              <Link
+                href="/"
+                className="cursor-pointer hover:text-[#4f0516] transition-colors whitespace-nowrap"
+              >
+                Home
+              </Link>
+              <Link
+                href="/about"
+                className="cursor-pointer hover:text-[#4f0516] transition-colors whitespace-nowrap"
+              >
+                About
+              </Link>
+              <Link
+                href="/fixtures"
+                className="cursor-pointer hover:text-[#4f0516] transition-colors whitespace-nowrap"
+              >
+                Fixtures
+              </Link>
             </div>
 
-            <Link href={"/team"} className="cursor-pointer hover:text-[#4f0516]">Team</Link>
-            <Link href={"/blogs"} className="cursor-pointer hover:text-[#4f0516]">Blogs</Link>
+            {/* Center Logo */}
+            <div className="flex justify-center items-center h-[8rem] w-[8rem] mt-[2rem] z-10 relative">
+              <Image
+                src={"/assets/mathura.png"}
+                alt="Ayodhya Super Kings"
+                fill
+                className="object-contain"
+                priority
+              />
+            </div>
 
-            {/* More Dropdown */}
-            <div className="relative group">
-              <button className="cursor-pointer hover:text-[#4f0516]">More ▾</button>
-              <div className="absolute top-full mt-2 bg-[#fcd700] text-black rounded shadow-md opacity-0 group-hover:opacity-100 pointer-events-none group-hover:pointer-events-auto transition duration-200 z-50">
-                <Link href="/gallery" className="block px-4 py-2 hover:bg-[#ffe066] whitespace-nowrap">Gallery</Link>
-                <Link href="/contact" className="block px-4 py-2 hover:bg-[#ffe066] whitespace-nowrap">Contact Us</Link>
+            {/* Right Links */}
+            <div className="flex gap-6 lg:gap-12 font-[popins] text-lg lg:text-xl">
+              <Link
+                href="/team"
+                className="cursor-pointer hover:text-[#4f0516] transition-colors whitespace-nowrap"
+              >
+                Team
+              </Link>
+              <Link
+                href="/blogs"
+                className="cursor-pointer hover:text-[#4f0516] transition-colors whitespace-nowrap"
+              >
+                Blogs
+              </Link>
+
+              {/* More Dropdown */}
+              <div className="relative" ref={moreDropdownRef}>
+                <button 
+                  className="cursor-pointer hover:text-[#4f0516] transition-colors flex items-center gap-1 whitespace-nowrap"
+                  onClick={() => setIsMoreOpen(!isMoreOpen)}
+                >
+                  More <span className="text-sm">▾</span>
+                </button>
+                {isMoreOpen && (
+                  <div className="absolute right-0 top-full mt-2 bg-[#fcd700] text-black rounded shadow-md z-50 border border-[#4f0516]/20 min-w-[120px]">
+                    <Link
+                      href="/gallery"
+                      className="block px-4 py-2 hover:bg-[#ffe066] transition-colors"
+                      onClick={() => setIsMoreOpen(false)}
+                    >
+                      Gallery
+                    </Link>
+                    <Link
+                      href="/contact"
+                      className="block px-4 py-2 hover:bg-[#ffe066] transition-colors"
+                      onClick={() => setIsMoreOpen(false)}
+                    >
+                      Contact Us
+                    </Link>
+                  </div>
+                )}
               </div>
             </div>
           </div>
 
-          {/* Mobile Menu Toggle - Visible on Mobile */}
-          <div
-            className="sm:hidden text-2xl cursor-pointer flex justify-end py-4"
-            onClick={() => setIsOpen(!isOpen)}
-          >
-            {isOpen ? <HiOutlineX /> : <HiOutlineMenuAlt3 />}
+          {/* Mobile Layout */}
+          <div className="sm:hidden w-full flex justify-between items-center h-full px-2">
+            {/* Mobile Logo - Stays inside navbar */}
+            <div className="h-16 w-16 relative">
+              <Image
+                src={"/assets/mathura.png"}
+                alt="Ayodhya Super Kings"
+                fill
+                className="object-contain"
+                priority
+              />
+            </div>
+
+            {/* Mobile Menu Toggle */}
+            <div
+              className="text-2xl cursor-pointer"
+              onClick={() => setIsOpen(!isOpen)}
+            >
+              {isOpen ? (
+                <HiOutlineX className="text-3xl" />
+              ) : (
+                <HiOutlineMenuAlt3 className="text-3xl" />
+              )}
+            </div>
           </div>
 
           {/* Mobile Menu Overlay */}
           {isOpen && (
             <div
-              className="fixed inset-0 bg-black/40 bg-opacity-50 z-40 lg:hidden cursor-pointer"
+              className="fixed inset-0 bg-[#fcd700]/80 backdrop-blur-sm z-40 lg:hidden"
               onClick={() => setIsOpen(false)}
             />
           )}
 
           {/* Mobile Menu Sidebar */}
           <div
-            className={`fixed top-0 right-0 h-full w-64 bg-[#141413]/50 backdrop-blur-2xl z-50 text-white font-[popins] transform transition-transform duration-300 ease-in-out lg:hidden ${
+            className={`fixed top-0 right-0 h-full w-64 bg-[#fcd700] z-50 text-black font-[popins] transform transition-transform duration-300 ease-in-out lg:hidden ${
               isOpen ? "translate-x-0" : "translate-x-full"
-            }`}
+            } shadow-2xl`}
           >
-            <div className="p-5 flex flex-col gap-6 mt-16">
-              <Link href={"/"} className="cursor-pointer hover:text-[#fab505]" onClick={() => setIsOpen(false)}>Home</Link>
-              <Link href={"/about"} className="cursor-pointer hover:text-[#fab505]" onClick={() => setIsOpen(false)}>About</Link>
-              <Link href={"/fixtures"} className="cursor-pointer hover:text-[#fab505]" onClick={() => setIsOpen(false)}>Fixtures</Link>
-              <Link href={"/team"} className="cursor-pointer hover:text-[#fab505]" onClick={() => setIsOpen(false)}>Team</Link>
-              <Link href={"/gallery"} className="cursor-pointer hover:text-[#fab505]" onClick={() => setIsOpen(false)}>Gallery</Link>
-              <Link href={"/blogs"} className="cursor-pointer hover:text-[#fab505]" onClick={() => setIsOpen(false)}>Blogs</Link>
-              <Link href={"/contact"} className="cursor-pointer hover:text-[#fab505]" onClick={() => setIsOpen(false)}>Contact us</Link>
+            {/* Mobile Menu Header with Logo */}
+            <div className="flex justify-center pt-6 pb-4">
+              <div className="h-20 w-20 relative">
+                <Image
+                  src={"/assets/mathura.png"}
+                  alt="Ayodhya Super Kings"
+                  fill
+                  className="object-contain"
+                  priority
+                />
+              </div>
+            </div>
+
+            {/* Mobile Menu Links */}
+            <div className="p-5 flex flex-col gap-6 mt-4 items-center text-xl">
+              <Link
+                href={"/"}
+                className="cursor-pointer hover:text-[#4f0516] w-full text-center py-2 transition-colors"
+                onClick={() => setIsOpen(false)}
+              >
+                Home
+              </Link>
+              <Link
+                href={"/about"}
+                className="cursor-pointer hover:text-[#4f0516] w-full text-center py-2 transition-colors"
+                onClick={() => setIsOpen(false)}
+              >
+                About
+              </Link>
+              <Link
+                href={"/fixtures"}
+                className="cursor-pointer hover:text-[#4f0516] w-full text-center py-2 transition-colors"
+                onClick={() => setIsOpen(false)}
+              >
+                Fixtures
+              </Link>
+              <Link
+                href={"/team"}
+                className="cursor-pointer hover:text-[#4f0516] w-full text-center py-2 transition-colors"
+                onClick={() => setIsOpen(false)}
+              >
+                Team
+              </Link>
+              <Link
+                href={"/gallery"}
+                className="cursor-pointer hover:text-[#4f0516] w-full text-center py-2 transition-colors"
+                onClick={() => setIsOpen(false)}
+              >
+                Gallery
+              </Link>
+              <Link
+                href={"/blogs"}
+                className="cursor-pointer hover:text-[#4f0516] w-full text-center py-2 transition-colors"
+                onClick={() => setIsOpen(false)}
+              >
+                Blogs
+              </Link>
+              <Link
+                href={"/contact"}
+                className="cursor-pointer hover:text-[#4f0516] w-full text-center py-2 transition-colors"
+                onClick={() => setIsOpen(false)}
+              >
+                Contact us
+              </Link>
             </div>
             <button
-              className="absolute top-4 right-4 text-2xl text-white"
+              className="absolute top-6 right-6 text-3xl text-black cursor-pointer"
               onClick={() => setIsOpen(false)}
             >
               <HiOutlineX />

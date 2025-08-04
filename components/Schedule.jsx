@@ -40,7 +40,7 @@ const Schedule = () => {
       <div className="max-w-5xl mx-auto relative z-10">
         <div className="flex justify-between items-center mb-10">
           <div>
-            <h2 className="lg:text-4xl font-bold text-yellow-400 font-[heading-1]">Match Schedule</h2>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-yellow-400 font-[heading-1]">Match Schedule</h2>
             <p className="text-lg text-gray-100 lg:mt-0 font-[popins]">Next Clash on the Court</p>
           </div>
           <Link

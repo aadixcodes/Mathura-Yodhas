@@ -5,8 +5,8 @@ const Spotlight = () => {
     <section className="bg-white py-12 px-4 mt-8">
       <div className="max-w-6xl mx-auto">
         {/* Heading */}
-        <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold font-[heading-1] text-center text-black mb-10">
-          Spotlight - Star of the Week
+        <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl  font-[heading-1] text-center text-black mb-10">
+          Spotlight Star of the Week
         </h2>
 
         {/* Content */}

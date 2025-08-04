@@ -10,17 +10,135 @@ export default function TeamSection() {
     {
       name: "Player Name",
       number: "19",
-      image: "/assets/Dr_web.jpg",
+      image: "/assets/Yodhas/Aashu_Nain.jpg",
     },
+
+    {
+      name: "Player Name",
+      number: "19",
+      image: "/assets/Yodhas/aman_kumar.jpg",
+    },
+
+    {
+      name: "Player Name",
+      number: "19",
+      image: "/assets/Yodhas/AMBAR_PANDEY.jpg",
+    },
+
+    {
+      name: "Player Name",
+      number: "19",
+      image: "/assets/Yodhas/Hari_Prasad.jpg",
+    },
+
+    {
+      name: "Player Name",
+      number: "19",
+      image: "/assets/Yodhas/Mannat_Chaudhary.jpg",
+    },
+
+    {
+      name: "Player Name",
+      number: "19",
+      image: "/assets/Yodhas/Mohd_Alam.jpg",
+    },
+
+    {
+      name: "Player Name",
+      number: "19",
+      image: "/assets/Yodhas/Naveen_Baliyan.jpg",
+    },
+
+    {
+      name: "Player Name",
+      number: "19",
+      image: "/assets/Yodhas/prince.jpg",
+    },
+
+    {
+      name: "Player Name",
+      number: "19",
+      image: "/assets/Yodhas/Rachit_Baliyan.jpg",
+    },
+
+    {
+      name: "Player Name",
+      number: "19",
+      image: "/assets/Yodhas/Rohit_Kumar.jpg",
+    },
+
+    {
+      name: "Player Name",
+      number: "19",
+      image: "/assets/Yodhas/Sameer_copy.jpg",
+    },
+
+    {
+      name: "Player Name",
+      number: "19",
+      image: "/assets/Yodhas/Shivendra.jpg",
+    },
+
+    {
+      name: "Player Name",
+      number: "19",
+      image: "/assets/Yodhas/Vedansh_Chaudhary.jpg",
+    },
+
+    {
+      name: "Player Name",
+      number: "19",
+      image: "/assets/Yodhas/Waseem_Saifi.jpg",
+    },
+
+
     // Add more players here...
   ];
 
   const management = [
+    // {
+    //   name: "Manager Name",
+    //   number: "01",
+    //   image: "/assets/Team/NAAVDEEP-TIWARI_web.jpg",
+    // },
     {
       name: "Manager Name",
       number: "01",
-      image: "/assets/Dr_web.jpg",
+      image: "/assets/Team/ramesh_kumar-rai+web.jpg",
     },
+    {
+      name: "Manager Name",
+      number: "01",
+      image: "/assets/Team/Rahul-Beniwal_web.jpg",
+    },
+    {
+      name: "Manager Name",
+      number: "01",
+      image: "/assets/Team/Nisha-Sharma_web.jpg",
+    },
+    {
+      name: "Manager Name",
+      number: "01",
+      image: "/assets/Team/GAURAV-PAL_web.jpg",
+    },
+    {
+      name: "Manager Name",
+      number: "01",
+      image: "/assets/Team/SAURABH-SINGH_web.jpg",
+    },
+    {
+      name: "Manager Name",
+      number: "01",
+      image: "/assets/Team/Dr_web.jpg",
+    },
+    
+
+    {
+      name: "Manager Name",
+      number: "01",
+      image: "/assets/Team/ishu-varma_web.jpg",
+    },
+
     // Add more managers here...
   ];
 
@@ -33,7 +151,7 @@ export default function TeamSection() {
         {/* Background Image */}
         <div
           className="absolute inset-0 bg-cover bg-center z-0"
-          style={{ backgroundImage: "url('/assets/background.png')" }}
+          style={{ backgroundImage: "url('/assets/background.png')"}}
         ></div>
 
         {/* White Overlay Layer */}
@@ -45,7 +163,7 @@ export default function TeamSection() {
           <div className="flex justify-center gap-4 mb-10">
             <button
               onClick={() => setActiveTab("yoddahs")}
-              className={`px-6 py-2 font-bold rounded shadow-md transition font-[popins] ${
+              className={`px-6 py-2 font-bold rounded shadow-md transition cursor-pointer font-[popins] ${
                 activeTab === "yoddahs"
                   ? "bg-yellow-400 text-black"
                   : "bg-white border-2 border-yellow-400 text-black"
@@ -55,7 +173,7 @@ export default function TeamSection() {
             </button>
             <button
               onClick={() => setActiveTab("sarathis")}
-              className={`px-6 py-2 font-bold rounded shadow-md transition font-[popins] ${
+              className={`px-6 py-2 font-bold rounded shadow-md transition cursor-pointer font-[popins] ${
                 activeTab === "sarathis"
                   ? "bg-yellow-400 text-black"
                   : "bg-white border-2 border-yellow-400 text-black"
@@ -77,10 +195,10 @@ export default function TeamSection() {
                   alt={member.name}
                   className="w-full object-cover"
                 />
-                <div className="bg-[#66071c] py-3 text-white">
+                {/* <div className="bg-[#66071c] py-3 text-white">
                   <p className="font-semibold">{member.name}</p>
                   <p className="text-sm">{member.number}</p>
-                </div>
+                </div> */}
               </div>
             ))}
           </div>
