@@ -4,7 +4,7 @@ export default function Leadership() {
   const coaches = [
     {
       name: "Head Coach",
-      image: "/assets/Profile.webp",
+      image: "/assets/Team/ramesh_kumar-rai+web.jpg",
     },
     {
       name: "Asst. Coach",
@@ -22,15 +22,15 @@ export default function Leadership() {
 
         {/* Subtext */}
         <p className="text-sm sm:text-base md:text-lg text-black max-w-2xl mx-auto mb-10 font-[popins]">
-          Adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        Our leadership blends strategic vision with deep-rooted values, guiding the Mathura Yodhas with purpose and pride.
         </p>
 
         {/* Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 justify-items-center">
+        <div className="flex flex-wrap items-center justify-center gap-20">
           {coaches.map((coach, index) => (
             <div
               key={index}
-              className="w-[250px] sm:w-[280px] md:w-[300px] text-center shadow-md rounded-lg overflow-hidden transition-transform duration-300 hover:scale-[1.02]"
+              className="w-[250px] sm:w-[280px] md:w-[300px] text-center rounded-lg overflow-hidden transition-transform duration-300 hover:scale-[1.02]"
             >
               <div className="bg-white p-2">
                 <Image
@@ -38,7 +38,7 @@ export default function Leadership() {
                   alt={coach.name}
                   width={300}
                   height={300}
-                  className="object-contain mx-auto w-full h-[240px] sm:h-[260px]"
+                  className="object-contain mx-auto w-full h-[240px] sm:h-[290px]"
                 />
               </div>
               <div className="bg-[#66071c] py-3">

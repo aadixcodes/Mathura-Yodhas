@@ -23,22 +23,22 @@ const Spotlight = () => {
             </p>
 
             <p className="text-base sm:text-lg font-[popins]">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu
-              diam euismod imperdiet. Ut lobortis et dolor magna aliquam. Ut
-              egestas felis nec massa tincidunt donec porttitor vulputate nec
-              magna eros. Massa tincidunt dui ut ornare lectus. Lorem viverra
-              arcu sagittis ut volutpat odio. Aenean sed adipiscing diam donec
-              adipiscing.
+            Vinit Choudhary is a talented and versatile volleyball player, 
+            known for playing in every position on the court. He plays for Mathura 
+            Yodhas in the UPPVL and has also been part of top leagues like Prime Volleyball 
+            and Thunderbolts Kolkata. Vinit's journey, from facing injuries to winning national titles, 
+            shows his hard work and strong spirit. Proud of his roots, he continues to inspire 
+            young players with his dedication and love for the game.
             </p>
           </div>
 
           {/* Image */}
           <div className="w-full md:w-1/3 flex justify-center">
             <Image
-              src="/assets/iconplayer.jpg" // Replace with actual path
+              src="/assets/Yodhas/ICON/Mathura_Yoddha.jpg" // Replace with actual path
               alt="Vinit Kumar"
-              width={250}
-              height={300}
+              width={300}
+              height={330}
               className="rounded shadow-md object-cover"
             />
           </div>

@@ -21,7 +21,7 @@ const Welcome = () => {
           {/* Image Content */}
           <div className="relative w-full h-[300px] sm:h-[400px] md:h-[450px] lg:h-[430px] rounded-lg overflow-hidden shadow-xl">
             <Image
-              src="/assets/Yodhas/ICON/Mathura_Yoddha.jpg"
+              src="/assets/Banner.jpg"
               alt="Noida Thunders Team"
               fill
               className="object-cover object-center"

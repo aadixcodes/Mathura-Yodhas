@@ -4,14 +4,14 @@ import Image from "next/image";
 
 const WeAre = () => {
   return (
-    <section className="py-10 sm:py-16 md:py-20">
+    <section className="pt-10 pb-4 sm:pt-16 sm:pb-6 md:pt-20 md:pb-2">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center lg:mb-1 sm:mb-16">
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-[#1c0f0d] font-[heading-1] mb-0 opacity-95 leading-tight">
             We Are Noida Thunders
           </h1>
-          <p className="lg:text-2xl font-[popins]">Our Origin Story</p>
+          <p className="lg:text-2xl font-[popins] italic">Our Origin Story</p>
         </div>  
 
         {/* Content Grid */}

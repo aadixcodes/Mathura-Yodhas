@@ -43,7 +43,7 @@ const Icons = [
       <div>
         <img src="/assets/mathura.png" alt="Noida Thunders Logo" className="w-32 mb-3" />
         <p className="text-white w-[80%] font-[popins]">
-          Lorem ipsum dolor sit amet, consectetur elit. Vestibulum nec odio suscipit nascetur cursus, con sectetur elit.
+          Mathura Yodhas where tradition fuels ambition, and every match is a battle of spirit and pride.
         </p>
         <div className="flex gap-4 mt-4">
           {Icons.map((item) => (
@@ -66,7 +66,7 @@ const Icons = [
         <ul className="text-white space-y-2 font-[popins]">
           <li><a href="/about" className="hover:text-yellow-500">About Us</a></li>
           <li><a href="/fixtures" className="hover:text-yellow-500">Fixtures</a></li>
-          <li><a href="/squad" className="hover:text-yellow-500">Our Squad</a></li>
+          <li><a href="/team" className="hover:text-yellow-500">Our Team</a></li>
           <li><a href="/gallery" className="hover:text-yellow-500">Gallery</a></li>
           <li><a href="/blogs" className="hover:text-yellow-500">Blogs</a></li>
           <li><a href="/contact" className="hover:text-yellow-500">Contact Us</a></li>
@@ -82,8 +82,7 @@ const Icons = [
               <IoLocationOutline className="text-xl" />
               <strong className="text-lg font-extralight">Address :</strong>
             </div>
-            demo address - VSS01 Mamarama <br />
-            Road Main City, Western
+            Mathura UP , India <br />
           </li>
           <li className="text-start">
             <div className="flex gap-3 items-center justify-start">
@@ -109,7 +108,7 @@ const Icons = [
       <div>
         <img src="/assets/mathura.png" alt="Noida Thunders Logo" className="w-32 mb-3 mx-auto" />
         <p className="text-white max-w-xs mx-auto font-[popins]">
-          Lorem ipsum dolor sit amet, consectetur elit. Vestibulum nec odio suscipit nascetur cursus, con sectetur elit.
+          Mathura Yodhas where tradition fuels ambition, and every match is a battle of spirit and pride.
         </p>
         <div className="flex gap-4 mt-4 justify-center">
           {Icons.map((item) => (
@@ -134,7 +133,7 @@ const Icons = [
           <ul className="text-white space-y-1 text-sm font-[popins]">
             <li><a href="/about" className="hover:text-yellow-500">About Us</a></li>
             <li><a href="/fixtures" className="hover:text-yellow-500">Fixtures</a></li>
-            <li><a href="/squad" className="hover:text-yellow-500">Our Squad</a></li>
+            <li><a href="/team" className="hover:text-yellow-500">Our Team</a></li>
             <li><a href="/gallery" className="hover:text-yellow-500">Gallery</a></li>
             <li><a href="/blogs" className="hover:text-yellow-500">Blogs</a></li>
             <li><a href="/contact" className="hover:text-yellow-500">Contact Us</a></li>
@@ -165,13 +164,19 @@ const Icons = [
   </div>
 
     {/* Bottom Bar */}
-    <div className="font-[popins] text-center bg-[#e0b404] text-black py-4 text-sm mt-4 flex flex-col md:flex-row items-center justify-center lg:gap-28 md:px-32">
-      <p>© Copyright 2025 Ayodya Super Kings. All Rights Reserved.</p>
-      <p>Design & Developed by Varnix Media Pvt. Ltd.</p>
-    </div>
-  </footer>
+      <div className="font-[popins] bg-[#e0b404] text-black py-4 text-sm mt-4">
+        <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center md:items-center justify-between md:px-8 px-4">
+          <p className="text-left w-full md:w-auto mb-2 md:mb-0">
+            © Copyright 2025 Mathura Yodhas. All Rights Reserved.
+          </p>
+          <p className="text-right w-full md:w-auto">
+            Design & Developed by Varnix Media Pvt. Ltd.
+          </p>
+        </div>
+      </div>
 
 
+    </footer>
   );
 }
 
