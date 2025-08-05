@@ -85,10 +85,10 @@ export default function Contact() {
               <h2 className="text-3xl font-bold mb-6 font-[popins]">Contact Us</h2>
 
               <div className="mb-4">
+
+                <p className="font-bold mb-3">Get in touch with Mathura Yodhas - <br />where champitons are made.</p>
+
                 <p className="text-sm">
-
-                  <p className="font-bold mb-3">Get in touch with Mathura Yodhas - <br />where champitons are made.</p>
-
                   Reach out to Mathura Yodhas for collaborations queries , or support. We're
                   here to assist you and celebrate the spirit of sports together.
                 </p>
