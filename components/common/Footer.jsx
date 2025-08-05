@@ -35,7 +35,7 @@ const Icons = [
 
   return (
     <footer className="footer bg-[#4f0516] text-white font-[popins] text-sm pt-10">
-  <div className="max-w-5xl mx-auto px-4 pb-10">
+    <div className="max-w-5xl mx-auto px-4 pb-10">
     
     {/* Desktop Layout: Grid for md and up */}
     <div className="hidden md:grid md:grid-cols-3 gap-8">
@@ -146,16 +146,15 @@ const Icons = [
           <ul className="text-white space-y-1 text-sm">
             <li>
               <strong>Address:</strong><br />
-              VSS01 Mamarama<br />
-              Road Main City, Western
+              Mathura UP , India <br />
             </li>
             <li>
               <strong>Phone:</strong><br />
-              +91-9123456789
+              +91 8620000002
             </li>
             <li>
               <strong>Email:</strong><br />
-              <a href="mailto:noidathunders@gmail.com" className="hover:text-yellow-500">noidathunders@gmail.com</a>
+              <a href="mailto:info@mathurayodhas.com" className="hover:text-yellow-500">info@mathurayodhas.com</a>
             </li>
           </ul>
         </div>

@@ -125,8 +125,7 @@ export default function TeamSection() {
       name: "Manager Name",
       number: "01",
       image: "/assets/Team/Dr_web.jpg",
-    },
-    
+    },    
 
     {
       name: "Manager Name",
@@ -144,12 +143,12 @@ export default function TeamSection() {
         className="py-16 px-4 sm:px-8 bg-[#f9f9f9] relative z-10 overflow-hidden"
       >
         {/* Background Image */}
-        <div
+        {/* <div
           className="absolute inset-0 bg-cover bg-center z-0"
           style={{ backgroundImage: "url('/assets/background.png')"}}
-        ></div>
+        ></div> */}
 
-        {/* White Overlay Layer */}
+        {/* White Overlay Layer? */}
         {/* <div className="absolute inset-0 bg-white opacity-80 z-0"></div> */}
 
         {/* Content */}
@@ -158,21 +157,21 @@ export default function TeamSection() {
           <div className="flex justify-center gap-4 mb-10">
             <button
               onClick={() => setActiveTab("yoddahs")}
-              className={`px-6 py-2 font-bold rounded shadow-md transition cursor-pointer font-[popins] ${
+              className={`px-4 py-1 sm:px-6 sm:py-2 font-bold rounded shadow-md transition cursor-pointer font-[popins] ${
                 activeTab === "yoddahs"
                   ? "bg-yellow-400 text-black"
                   : "bg-white border-2 border-yellow-400 text-black"
-              }`}
+              } text-sm sm:text-base`}
             >
               Our Yoddahs (Squad)
             </button>
             <button
               onClick={() => setActiveTab("sarathis")}
-              className={`px-6 py-2 font-bold rounded shadow-md transition cursor-pointer font-[popins] ${
+              className={`px-4 py-1 sm:px-6 sm:py-2 font-bold rounded shadow-md transition cursor-pointer font-[popins] ${
                 activeTab === "sarathis"
                   ? "bg-yellow-400 text-black"
                   : "bg-white border-2 border-yellow-400 text-black"
-              }`}
+              } text-sm sm:text-base`}
             >
               Our Sarathi’s (Management)
             </button>

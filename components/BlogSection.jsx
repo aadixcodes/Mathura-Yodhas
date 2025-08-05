@@ -57,7 +57,7 @@ export default function BlogSection() {
               <img
                 src={post.image}
                 alt={post.title}
-                className="w-full h-55 object-cover"
+                className="w-full h-50 object-cover"
               />
               <div className="bg-[#66071c] text-white p-3 pr-10">
                 {/* <p className="text-sm mb-2 flex items-center">

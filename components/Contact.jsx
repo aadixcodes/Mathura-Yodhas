@@ -1,4 +1,35 @@
+import { FaFacebookF, FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa";
+
 export default function Contact() {
+
+  const Icons = [
+    {
+      id: 1,
+      icon: <FaFacebookF />,
+      url: 'https://www.facebook.com/profile.php?id=61578258997892'
+    },
+
+    {
+      id: 2,
+      icon: <FaInstagram />,
+      url: 'https://www.instagram.com/mathurayodhas/'
+    },
+
+    {
+      id: 3,
+      icon: <FaTwitter />,
+      url: 'https://x.com/MathuraYodhas?t=JqL2vap9U8ccwBVACPaUzA&s=08',
+    },
+
+    {
+      id: 4,
+      icon: <FaYoutube />,
+      url: 'https://www.youtube.com/channel/UC6caSs7bKrCkAueXAjxpmBA',
+    }
+  ]
+
+
+
     return (
       <section
         className="w-full relative bg-cover bg-center bg-no-repeat"
@@ -53,41 +84,59 @@ export default function Contact() {
             <div className="bg-[#660822] text-white p-6 rounded-xl shadow-lg font-[popins]">
               <h2 className="text-3xl font-bold mb-6 font-[popins]">Contact Us</h2>
               <div className="mb-4">
-                <h4 className="font-semibold text-lg">Office Address</h4>
+                <h4 className="font-semibold text-lg">Stadium Name</h4>
                 <p className="text-sm">
-                  Jl Raya Puputan, No.90<br />
-                  Renon, Denpasar, Bali, Indonesia
+                  Shaheed Vijay Singh Pathik Sports Complex<br />
+                  Mathura.
                 </p>
               </div>
+
               <div className="mb-4">
-                <h4 className="font-semibold text-lg">Training Field</h4>
+                <h4 className="font-semibold text-lg">Phone No</h4>
                 <p className="text-sm">
-                  Lapangan Puputan<br />
-                  Niti Mandala Renon, Denpasar, Bali
+                +91 8620000002
                 </p>
               </div>
+
               <div>
-                <h4 className="font-semibold text-lg">Contact</h4>
-                <p className="text-sm">Phone: (+62) 1919-2020</p>
-                <p className="text-sm">Email: contact@socca.com</p>
+                <h4 className="font-semibold text-lg">Email</h4>
+                <p className="text-sm">info@mathurayodhas.com</p>
               </div>
+
+              <div className="flex gap-4 mt-8 justify-start">
+              {Icons.map((item) => (
+                <a
+                  key={item.id}
+                  href={item.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-amber-500 p-2 rounded-2xl hover:bg-amber-600 transition"
+                >
+                  <h2 className="text-black hover:text-white">{item.icon}</h2>
+                </a>
+               ))}
+              </div>
+
             </div>
+
           </div>
   
           {/* Map Placeholder */}
 
           <div className="w-full flex justify-center">
             <div className="mt-12 w-full max-w-5xl">
-                <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d112178.51076159457!2d77.31942423472935!3d28.522327774263665!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce5a43173357b%3A0x37ffce30c87cc03f!2sNoida%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1753900962452!5m2!1sen!2sin"
-                className="w-full h-[400px] rounded-lg shadow-md border-2 border-orange-800"
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d56637.33497684581!2d77.64295492408567!3d27.474444439030357!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x397371163d4d5205%3A0x4273a09defe10ea5!2sMathura%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1754363455843!5m2!1sen!2sin"
+                width="100%"
+                height="450"
                 style={{ border: 0 }}
                 allowFullScreen=""
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-                ></iframe>
-                </div>
+                title="Mathura Location Map"
+              ></iframe>
             </div>
+          </div>
         </div>
       </section>
     );

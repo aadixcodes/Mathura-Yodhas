@@ -6,20 +6,20 @@ const matches = [
   {
     id: 1,
     team1: "Mathura Yodhas",
-    team2: "Noida Thunders",
-    date: "July 31, 2025 | 02:00PM",
+    team2: "Moradabad Bulls",
+    date: "August 8th, 2025 | 05:00 PM",
     stadium: "Stadium Name",
     team1Logo: "/assets/mathura.png",
-    team2Logo: "/assets/noida.png",
+    team2Logo: "/assets/uppvl/moradabad.png",
   },
   {
     id: 2,
     team1: "Mathura Yodhas",
-    team2: "Noida Thunders",
-    date: "July 31, 2025 | 02:00PM",
+    team2: "Gorakhpur Giants",
+    date: "August 10th, 2025 | 03:30 PM",
     stadium: "Stadium Name",
     team1Logo: "/assets/mathura.png",
-    team2Logo: "/assets/noida.png",
+    team2Logo: "/assets/uppvl/gorakhpur.png",
   },
 ];
 

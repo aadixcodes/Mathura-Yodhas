@@ -93,7 +93,7 @@ const Navbar = () => {
                   More <span className="text-sm">▾</span>
                 </button>
                 {isMoreOpen && (
-                  <div className="absolute right-0 top-full mt-2 bg-[#fcd700] text-black rounded shadow-md z-50 border border-[#4f0516]/20 min-w-[120px]">
+                  <div className="absolute right-0 top-full mt-2 bg-[#fcd700] text-black rounded shadow-md z-50 border border-[#4f0516]/20 min-w-[170px]">
                     <Link
                       href="/gallery"
                       className="block px-4 py-2 hover:bg-[#ffe066] transition-colors"
