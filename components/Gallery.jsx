@@ -2,9 +2,9 @@ import Image from "next/image";
 import Link from "next/link";
 
 const images = [
-  "/assets/Banner.jpg",
-  "/assets/Banner.jpg",
-  "/assets/Banner.jpg",
+  "/assets/gallery/1.jpg",
+  "/assets/gallery/2.jpg",
+  "/assets/gallery/3.jpg",
 ];
 
 const Gallery = () => {
@@ -28,7 +28,7 @@ const Gallery = () => {
                 alt={`Gallery ${index + 1}`}
                 width={400}
                 height={300}
-                className="w-full h-[200px] sm:h-[250px] md:h-[300px] object-cover hover:scale-105 transition-transform duration-300"
+                className="w-full h-[200px] sm:h-[250px] md:h-[300px] object-cover border-2 border-yellow-500 rounded-lg hover:scale-105 transition-transform duration-300"
               />
             </div>
           ))}

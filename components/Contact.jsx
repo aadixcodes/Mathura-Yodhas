@@ -83,6 +83,19 @@ export default function Contact() {
             {/* Right Side: Contact Info */}
             <div className="bg-[#660822] text-white p-6 rounded-xl shadow-lg font-[popins]">
               <h2 className="text-3xl font-bold mb-6 font-[popins]">Contact Us</h2>
+
+              <div className="mb-4">
+                <p className="text-sm">
+
+                  <p className="font-bold mb-3">Get in touch with Mathura Yodhas - <br />where champitons are made.</p>
+
+                  Reach out to Mathura Yodhas for collaborations queries , or support. We're
+                  here to assist you and celebrate the spirit of sports together.
+                </p>
+              </div>
+
+
+
               <div className="mb-4">
                 <h4 className="font-semibold text-lg">Stadium Name</h4>
                 <p className="text-sm">
@@ -103,7 +116,7 @@ export default function Contact() {
                 <p className="text-sm">info@mathurayodhas.com</p>
               </div>
 
-              <div className="flex gap-4 mt-8 justify-start">
+              <div className="flex gap-4 mt-4 justify-start">
               {Icons.map((item) => (
                 <a
                   key={item.id}
