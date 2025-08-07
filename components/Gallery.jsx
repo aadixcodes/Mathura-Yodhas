@@ -12,7 +12,7 @@ const images = [
 
 const Gallery = () => {
   return (
-    <section className="bg-[#680000] py-12 px-4">
+    <section className="bg-[#5a071a] py-12 px-4">
       <div className="max-w-6xl mx-auto text-center">
         {/* Section Heading */}
         <h2 className="text-3xl sm:text-4xl md:text-5xl font-[heading-1] text-yellow-400 mb-2">

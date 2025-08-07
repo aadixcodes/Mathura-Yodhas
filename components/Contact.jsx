@@ -32,7 +32,7 @@ export default function Contact() {
 
     return (
       <section
-        className="w-full relative bg-cover bg-center bg-no-repeat"
+        className="w-full py-2 md:py-20 relative bg-cover bg-center bg-no-repeat"
         style={{ backgroundImage: "url('/assets/background.png')" }} // 🔁 Replace with actual image path
       >
         {/* White light overlay */}

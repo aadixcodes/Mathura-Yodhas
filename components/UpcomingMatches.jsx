@@ -70,12 +70,12 @@ export default function UpcomingMatches() {
   ];
 
   return (
-    <section className="py-12 px-4 sm:px-6 bg-white">
-      <div className="max-w-7xl mx-auto text-center mb-10">
+    <section className="py-20 bg-white">
+      {/* <div className="max-w-7xl mx-auto text-center mb-10">
         <h2 className="text-3xl sm:text-4xl md:text-5xl font-[heading-1] text-[#5a071a]">
           Upcoming Matches
         </h2>
-      </div>
+      </div> */}
 
       <div className="space-y-6">
         {matches.map((match, index) => (

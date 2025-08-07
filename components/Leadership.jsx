@@ -13,15 +13,15 @@ export default function Leadership() {
   ];
 
   return (
-    <section className="py-12 px-4 sm:px-6 lg:px-20 bg-white">
+    <section className="py-20 bg-white">
       <div className="max-w-6xl mx-auto text-center">
         {/* Heading */}
-        <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-gray-900 mb-4 font-[heading-1]">
+        <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-5xl xl:text-6xl text-[#1c0f0d] mb-4 font-[heading-1]">
           Our Leadership
         </h2>
 
         {/* Subtext */}
-        <p className="text-sm sm:text-base md:text-lg text-black max-w-2xl mx-auto mb-10 font-[popins]">
+        <p className="text-sm sm:text-base md:text-lg text-[#1c0f0d] max-w-2xl mx-auto mb-10 font-[popins]">
         Our leadership blends strategic vision with deep-rooted values, guiding the Mathura Yodhas with purpose and pride.
         </p>
 
