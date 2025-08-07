@@ -8,7 +8,7 @@ const matches = [
     team1: "Mathura Yodhas",
     team2: "Moradabad Bulls",
     date: "August 8th, 2025 | 05:00 PM",
-    stadium: "Stadium Name",
+    stadium: "Shaheed Vijay Singh Pathik Sports Complex, Greater Noida",
     team1Logo: "/assets/mathura.png",
     team2Logo: "/assets/uppvl/moradabad.png",
   },
@@ -17,7 +17,7 @@ const matches = [
     team1: "Mathura Yodhas",
     team2: "Gorakhpur Giants",
     date: "August 10th, 2025 | 03:30 PM",
-    stadium: "Stadium Name",
+    stadium: "Shaheed Vijay Singh Pathik Sports Complex, Greater Noida",
     team1Logo: "/assets/mathura.png",
     team2Logo: "/assets/uppvl/gorakhpur.png",
   },
@@ -37,7 +37,7 @@ const Schedule = () => {
       {/* Dark overlay */}
       <div className="absolute inset-0 bg-[#680000]/90 z-0"></div>
       
-      <div className="max-w-5xl mx-auto relative z-10">
+      <div className="max-w-7xl mx-auto relative z-10">
         <div className="flex justify-between items-center mb-10">
           <div>
             <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-yellow-400 font-[heading-1]">Match Schedule</h2>
@@ -58,7 +58,7 @@ const Schedule = () => {
               className="relative bg-white/70 rounded-lg p-4 text-center
                         border border-white/20 shadow-lg
                         before:absolute before:inset-0 before:bg-white/5 before:rounded-lg
-                        hover:before:bg-white/30 hover:scale-105 transition-all duration-300"
+                        hover:before:bg-white/30 transition-all duration-300"
             >
               {/* White glow effect */}
               <div className="absolute inset-0 rounded-lg border border-white/10 pointer-events-none"></div>

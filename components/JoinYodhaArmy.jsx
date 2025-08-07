@@ -14,7 +14,7 @@ const JoinYodhaArmy = () => {
       {/* Content Wrapper */}
       <div className="max-w-4xl mx-auto text-center relative z-10">
         {/* Heading */}
-        <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-black mb-3 font-[heading-1]">
+        <h2 className="text-3xl sm:text-4xl md:text-5xl text-black mb-3 font-[heading-1]">
           Join the Yodha Army
         </h2>
 

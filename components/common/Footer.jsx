@@ -34,7 +34,7 @@ const Icons = [
 
 
   return (
-    <footer className="footer bg-[#4f0516] text-white font-[popins] text-sm pt-10">
+    <footer className="footer bg-[#680000] text-white font-[popins] text-sm pt-10">
     <div className="max-w-5xl mx-auto px-4 pb-10">
     
     {/* Desktop Layout: Grid for md and up */}

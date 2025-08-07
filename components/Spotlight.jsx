@@ -2,10 +2,10 @@ import Image from "next/image";
 
 const Spotlight = () => {
   return (
-    <section className="bg-white py-12 px-4 mt-8">
+    <section className="bg-white py-12 px-4 mt-2 md:mt-8">
       <div className="max-w-6xl mx-auto">
         {/* Heading */}
-        <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl  font-[heading-1] text-center text-black mb-10">
+        <h2 className="text-3xl sm:text-4xl md:text-5xl font-[heading-1] text-center text-black mb-10">
           Spotlight Star of the Week
         </h2>
 
@@ -33,7 +33,7 @@ const Spotlight = () => {
           </div>
 
           {/* Image */}
-          <div className="w-full md:w-1/3 flex justify-center">
+          <div className="w-full md:w-1/3 flex justify-center rounded-lg">
             <Image
               src="/assets/Yodhas/ICON/Mathura_Yoddha.jpg" // Replace with actual path
               alt="Vinit Kumar"
