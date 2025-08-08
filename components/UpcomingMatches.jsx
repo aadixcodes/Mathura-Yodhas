@@ -3,9 +3,9 @@ export default function UpcomingMatches() {
     {
       date: "August 8th, 2025",
       time: "05:00 PM - 06:30 PM",
-      stadium: "Stadium Name",
+      stadium: "Shaheed Vijay Singh Pathik Sports Complex, Greater Noida",
       homeTeam: {
-        name: "Mathura Yodhyas",
+        name: "Mathura Yodhas",
         logo: "/assets/mathura.png",
       },
       awayTeam: {
@@ -16,9 +16,9 @@ export default function UpcomingMatches() {
     {
       date: "August 10th, 2025",
       time: "03:30 PM - 05:00 PM",
-      stadium: "Stadium Name",
+      stadium: "Shaheed Vijay Singh Pathik Sports Complex, Greater Noida",
       homeTeam: {
-        name: "Mathura Yodhyas",
+        name: "Mathura Yodhas",
         logo: "/assets/mathura.png",
       },
       awayTeam: {
@@ -29,9 +29,9 @@ export default function UpcomingMatches() {
     {
       date: "August 11th, 2025",
       time: "03:30 PM - 05:00 PM",
-      stadium: "Stadium Name",
+      stadium: "Shaheed Vijay Singh Pathik Sports Complex, Greater Noida",
       homeTeam: {
-        name: "Mathura Yodhyas",
+        name: "Mathura Yodhas",
         logo: "/assets/mathura.png",
       },
       awayTeam: {
@@ -43,9 +43,9 @@ export default function UpcomingMatches() {
     {
       date: "August 13th, 2025",
       time: "05:00 PM - 06:30 PM",
-      stadium: "Stadium Name",
+      stadium: "Shaheed Vijay Singh Pathik Sports Complex, Greater Noida",
       homeTeam: {
-        name: "Mathura Yodhyas",
+        name: "Mathura Yodhas",
         logo: "/assets/mathura.png",
       },
       awayTeam: {
@@ -57,9 +57,9 @@ export default function UpcomingMatches() {
     {
       date: "August 15th, 2025",
       time: "03:30 PM - 05:00 PM",
-      stadium: "Stadium Name",
+      stadium: "Shaheed Vijay Singh Pathik Sports Complex, Greater Noida",
       homeTeam: {
-        name: "Mathura Yodhyas",
+        name: "Mathura Yodhas",
         logo: "/assets/mathura.png",
       },
       awayTeam: {
@@ -70,7 +70,7 @@ export default function UpcomingMatches() {
   ];
 
   return (
-    <section className="py-20 bg-white">
+    <section className="py-20 px-3 bg-white">
       {/* <div className="max-w-7xl mx-auto text-center mb-10">
         <h2 className="text-3xl sm:text-4xl md:text-5xl font-[heading-1] text-[#5a071a]">
           Upcoming Matches
@@ -81,14 +81,14 @@ export default function UpcomingMatches() {
         {matches.map((match, index) => (
           <div
             key={index}
-            className="bg-[#5a071a] rounded-tr-[32px] rounded-bl-[32px] w-full max-w-4xl mx-auto overflow-hidden shadow-md relative text-white px-2 py-4 sm:px-6 sm:py-6"
+            className="bg-[#5a071a] rounded-tr-[32px] rounded-bl-[32px] w-full max-w-6xl mx-auto overflow-hidden shadow-md relative text-white px-2 py-4 sm:px-6 sm:py-6"
           >
             {/* Match Time */}
-            <div className="absolute top-2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-[#fbc02d] px-2 sm:px-4 py-0.5 sm:py-1 rounded-bl-xl rounded-br-xl text-black font-bold text-xs sm:text-sm z-20">
+            <div className="absolute top-2 mt-1 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-[#fbc02d] px-2 sm:px-4 py-0.5 sm:py-1 rounded-bl-xl rounded-br-xl text-black font-bold text-xs sm:text-sm z-20">
                 {match.time}
             </div>
 
-            <div className="flex flex-col md:flex-row items-center justify-between gap-4 sm:gap-6">
+            <div className="flex flex-col md:flex-row items-center justify-between gap-2 md:gap-6 mt-4 md:mt-0">
               {/* Home Team */}
               <div className="flex items-center space-x-1 sm:space-x-2">
                 <span className="font-bold font-[popins] text-sm sm:text-lg text-center">
