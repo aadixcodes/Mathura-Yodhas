@@ -89,6 +89,23 @@ import Image from "next/image";
 
 const Partners = () => {
   const sponsors = [
+    
+    
+    {
+      name: "Sponsor 5",
+      logo: "/assets/sponsorslogo/PartnerSection4.png",
+      category: "Title Sponsor"
+    },
+    {
+      name: "Sponsor 4",
+      logo: "/assets/sponsorslogo/PartnerSection3.png",
+      category: "Title Sponsor"
+    },
+    {
+      name: "Sponsor 11",
+      logo: "/assets/sponsorslogo/PartnerSection11.png",
+      category: "Co- Powered by"
+    },
     {
       name: "Sponsor 1",
       logo: "/assets/sponsorslogo/PartnerSection1.png",
@@ -103,16 +120,6 @@ const Partners = () => {
       name: "Sponsor 3",
       logo: "/assets/sponsorslogo/PartnerSection2.png",
       category: "Travel Partner"
-    },
-    {
-      name: "Sponsor 4",
-      logo: "/assets/sponsorslogo/PartnerSection3.png",
-      category: "Title Sponsor"
-    },
-    {
-      name: "Sponsor 5",
-      logo: "/assets/sponsorslogo/PartnerSection4.png",
-      category: "Title Sponsor"
     },
     {
       name: "Sponsor 6",
@@ -154,7 +161,7 @@ const Partners = () => {
         </div>
 
         {/* Partner logos with categories */}
-        <div className="flex flex-wrap justify-center items-center gap-4 sm:gap-6 md:gap-8">
+        <div className="flex flex-wrap justify-center items-center gap-4 sm:gap-6 md:gap-8 mt-12">
           {sponsors.map((sponsor, index) => (
             <div 
               key={index} 
