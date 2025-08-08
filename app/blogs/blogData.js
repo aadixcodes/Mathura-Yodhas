@@ -156,7 +156,7 @@ export const blogPosts = [
       title: "From Mitti to Matchday: The Soil That Grows Yodhas",
       description: "Volleyball wasn't born under stadium lights. It started in Mathura's gali courts, in school grounds with no nets, and in villages where the ball was old — but the spirit was new every day.",
       date: "August 1, 2025",
-      image: "/assets/BlogBanner.jpg",
+      image: "/assets/BlogBanner2.jpg",
       author: "Sports Journalist",
       readTime: "6 min read",
       content: [
