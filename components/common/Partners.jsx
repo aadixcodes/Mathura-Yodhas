@@ -106,6 +106,12 @@ const Partners = () => {
       logo: "/assets/sponsorslogo/PartnerSection12.png",
       category: "Co- Powered by"
     },
+    
+    {
+      name: "Sponsor 3",
+      logo: "/assets/sponsorslogo/PartnerSection2.png",
+      category: "Travel Partner"
+    },
     {
       name: "Sponsor 1",
       logo: "/assets/sponsorslogo/PartnerSection1.png",
@@ -115,11 +121,6 @@ const Partners = () => {
       name: "Sponsor 2",
       logo: "/assets/sponsorslogo/PartnerSection10.png",
       category: "Broadcasting Partner"
-    },
-    {
-      name: "Sponsor 3",
-      logo: "/assets/sponsorslogo/PartnerSection2.png",
-      category: "Travel Partner"
     },
     {
       name: "Sponsor 7",
