@@ -13,9 +13,9 @@ export default function Home() {
     <Welcome/>
     <Schedule/>
     <Spotlight/>
-    <JoinYodhaArmy/>
     <Gallery/>
     <Partners/>
+    <JoinYodhaArmy/>
     </>
   );
 }
