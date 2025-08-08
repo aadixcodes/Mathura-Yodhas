@@ -97,13 +97,13 @@ const Partners = () => {
       category: "Title Sponsor"
     },
     {
-      name: "Sponsor 4",
-      logo: "/assets/sponsorslogo/PartnerSection3.png",
-      category: "Title Sponsor"
-    },
-    {
       name: "Sponsor 11",
       logo: "/assets/sponsorslogo/PartnerSection11.png",
+      category: "Co- Powered by"
+    },
+    {
+      name: "Sponsor 12",
+      logo: "/assets/sponsorslogo/PartnerSection12.png",
       category: "Co- Powered by"
     },
     {
@@ -122,11 +122,6 @@ const Partners = () => {
       category: "Travel Partner"
     },
     {
-      name: "Sponsor 6",
-      logo: "/assets/sponsorslogo/PartnerSection5.png",
-      category: "Technology Partner"
-    },
-    {
       name: "Sponsor 7",
       logo: "/assets/sponsorslogo/PartnerSection6.png",
       category: "Technology Partner"
@@ -139,12 +134,12 @@ const Partners = () => {
     {
       name: "Sponsor 9",
       logo: "/assets/sponsorslogo/PartnerSection8.png",
-      category: "Nutrition Partner"
+      category: "Clothing Partner"
     },
     {
       name: "Sponsor 10",
       logo: "/assets/sponsorslogo/PartnerSection9.png",
-      category: "Equipment Partner"
+      category: "Plywood Partner"
     },
   ];
 
@@ -167,7 +162,7 @@ const Partners = () => {
               key={index} 
               className="flex flex-col items-center justify-center w-[45%] sm:w-[30%] md:w-[22%] lg:w-[18%] p-2"
             >
-              <p className="text-sm sm:text-md font-medium text-[#1c0f0d] mb-2 text-center">
+              <p className="text-md font-semibold text-[#1c0f0d] mb-2 text-center">
                 {sponsor.category}
               </p>
               <div className="relative w-full aspect-square max-w-[180px]">
