@@ -169,7 +169,7 @@ const Icons = [
             © Copyright 2025 Mathura Yodhas. All Rights Reserved.
           </p>
           <p className="text-right w-full md:w-auto">
-            Design & Developed by Varnix Media Pvt. Ltd.
+            Designed & Developed by Varnix Media Pvt. Ltd.
           </p>
         </div>
       </div>
