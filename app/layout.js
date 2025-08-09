@@ -14,8 +14,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Mathura Yodhas",
-  description: "",
+  title: "Mathura Yodhas - UPPVL Season 1 Team",
+  description: "Discover the Mathura Yodhas team from UPPVL Season 1! Explore their journey, key players, match highlights, and team achievements in the Uttar Pradesh Pro Volleyball League.",
 };
 
 export default function RootLayout({ children }) {
