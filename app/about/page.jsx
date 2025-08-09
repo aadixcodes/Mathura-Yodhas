@@ -15,7 +15,7 @@ const page = () => {
 
     <OurPurpose/>
 
-    <Leadership/>
+    {/* <Leadership/> */}
 
     <WordsOwner/>
 
